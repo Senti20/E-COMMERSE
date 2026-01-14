@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PC Parts Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+</head>
+<body class="bg-light">
+  
+  <!-- Header -->
+ <div class="d-flex flex-column justify-content-center align-items-center py-5" 
+       style="background-image: url('C:\\Users\\Administrator\\Desktop\\E-Commerse\\Images\\Pc.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
+    <div style="background-color: rgba(0, 0, 0, 0.6); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="d-flex flex-column align-items-center">
+        <h1 class="fw-bold display-5 text-center text-white">Our Products</h1>
+        <p class="lead text-center text-white">Premium PC components for every build</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">PC Parts Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center w-100">
+          <ul class="navbar-nav d-flex flex-column flex-lg-row">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="product.html">All Categories</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="cpu.html"><i class="bi bi-cpu me-2 text-success"></i>Processors (CPU)</a></li>
+                <li><a class="dropdown-item" href="gpu.html"><i class="bi bi-gpu-card me-2 text-primary"></i>Graphics Cards (GPU)</a></li>
+                <li><a class="dropdown-item" href="motherboard.html"><i class="bi bi-motherboard me-2 text-info"></i>Motherboards</a></li>
+                <li><a class="dropdown-item" href="psu.html"><i class="bi bi-lightning-charge me-2 text-warning"></i>Power Supplies</a></li>
+                <li><a class="dropdown-item" href="ram.html"><i class="bi bi-memory me-2 text-secondary"></i>RAM Memory</a></li>
+                <li><a class="dropdown-item" href="storage.html"><i class="bi bi-hdd me-2 text-dark"></i>Storage</a></li>
+                <li><a class="dropdown-item" href="cooling.html"><i class="bi bi-fan me-2 text-info"></i>Cooling</a></li>
+                <li><a class="dropdown-item" href="cases.html"><i class="bi bi-pc-display me-2 text-purple"></i>PC Cases</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row mt-3 mt-lg-0">
+            <div class="d-flex">
+              <a href="cart.html" class="btn btn-outline-light me-2">
+                <i class="bi bi-cart-fill me-2"></i>Cart (<span id="cart-count">0</span>)
+              </a>
+              <a href="login.html" class="btn btn-primary me-2">Login</a>
+              <a href="register.html" class="btn btn-outline-primary">Register</a>
+            </div>
+            <form class="d-flex mt-3 mt-lg-0 ms-lg-3">
+              <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    
+    <!-- Main Gallery View -->
+    <div id="main-gallery">
+      <h2 class="text-center mb-4 text-primary">Browse Products by Category</h2>
+      <p class="text-center text-muted mb-5">Click on any category to explore our products</p>
+      
+      <div class="row g-4">
+        <!-- CPU Category -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 border-success border-2 shadow-sm cursor-pointer bg-success bg-opacity-10" onclick="window.location.href='cpu.html'">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-cpu fs-1 text-success mb-3"></i>
+              <div class="fw-bold text-dark fs-5 mb-2">Processors (CPU)</div>
+              <p class="text-muted small mb-3">AMD Ryzen & Intel Core series</p>
+              <div class="text-primary fw-medium">3 Products</div>
+              <a href="cpu.html" class="btn btn-sm btn-outline-success mt-3">View All</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- GPU Category -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 border-primary border-2 shadow-sm cursor-pointer bg-primary bg-opacity-10" onclick="window.location.href='gpu.html'">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-gpu-card fs-1 text-primary mb-3"></i>
+              <div class="fw-bold text-dark fs-5 mb-2">Graphics Cards (GPU)</div>
+              <p class="text-muted small mb-3">NVIDIA RTX & AMD Radeon</p>
+              <div class="text-primary fw-medium">3 Products</div>
+              <a href="gpu.html" class="btn btn-sm btn-outline-primary mt-3">View All</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Motherboard Category -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 border-info border-2 shadow-sm cursor-pointer bg-info bg-opacity-10" onclick="window.location.href='motherboard.html'">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-motherboard fs-1 text-info mb-3"></i>
+              <div class="fw-bold text-dark fs-5 mb-2">Motherboards</div>
+              <p class="text-muted small mb-3">ASUS, MSI, Gigabyte & more</p>
+              <div class="text-primary fw-medium">3 Products</div>
+              <a href="motherboard.html" class="btn btn-sm btn-outline-info mt-3">View All</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- PSU Category -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 border-warning border-2 shadow-sm cursor-pointer bg-warning bg-opacity-10" onclick="window.location.href='psu.html'">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-lightning-charge fs-1 text-warning mb-3"></i>
+              <div class="fw-bold text-dark fs-5 mb-2">Power Supplies (PSU)</div>
+              <p class="text-muted small mb-3">Corsair, Seasonic, EVGA</p>
+              <div class="text-primary fw-medium">1 Product</div>
+              <a href="psu.html" class="btn btn-sm btn-outline-warning mt-3">View All</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- RAM Category -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 border-secondary border-2 shadow-sm cursor-pointer bg-secondary bg-opacity-10" onclick="window.location.href='ram.html'">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-memory fs-1 text-secondary mb-3"></i>
+              <div class="fw-bold text-dark fs-5 mb-2">RAM Memory</div>
+              <p class="text-muted small mb-3">DDR4 & DDR5 memory kits</p>
+              <div class="text-primary fw-medium">1 Product</div>
+              <a href="ram.html" class="btn btn-sm btn-outline-secondary mt-3">View All</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Storage Category -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 border-dark border-2 shadow-sm cursor-pointer bg-dark bg-opacity-10" onclick="window.location.href='storage.html'">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-hdd fs-1 text-dark mb-3"></i>
+              <div class="fw-bold text-dark fs-5 mb-2">Storage (SSD/HDD)</div>
+              <p class="text-muted small mb-3">NVMe SSDs & Hard Drives</p>
+              <div class="text-primary fw-medium">1 Product</div>
+              <a href="storage.html" class="btn btn-sm btn-outline-dark mt-3">View All</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cooling Category -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 border-info border-2 shadow-sm cursor-pointer bg-info bg-opacity-10" onclick="window.location.href='cooling.html'">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-fan fs-1 text-info mb-3"></i>
+              <div class="fw-bold text-dark fs-5 mb-2">Cooling Solutions</div>
+              <p class="text-muted small mb-3">AIO Coolers & Air Coolers</p>
+              <div class="text-primary fw-medium">1 Product</div>
+              <a href="cooling.html" class="btn btn-sm btn-outline-info mt-3">View All</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cases Category -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 border-purple border-2 shadow-sm cursor-pointer" style="background-color: #f2eefe;" onclick="window.location.href='cases.html'">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-pc-display fs-1 text-purple mb-3"></i>
+              <div class="fw-bold text-dark fs-5 mb-2">PC Cases</div>
+              <p class="text-muted small mb-3">Gaming & Workstation Cases</p>
+              <div class="text-primary fw-medium">1 Product</div>
+              <a href="cases.html" class="btn btn-sm btn-outline-purple mt-3" style="border-color: #6610f2; color: #6610f2;">View All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="d-flex flex-column align-items-center">
+        <p class="mb-0">© 2024 PC Parts Hub. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Detail Modal -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <img id="modalProductImage" src="" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+              <span id="modalProductBadge" class="badge mb-2"></span>
+              <h3 id="modalProductTitle" class="fw-bold"></h3>
+              <p id="modalProductDescription" class="text-muted"></p>
+              <div class="fs-4 fw-bold mb-3" id="modalProductPrice"></div>
+              <div class="text-warning mb-3" id="modalProductRating"></div>
+              <div class="mb-3">
+                <label for="quantity" class="form-label">Quantity:</label>
+                <input type="number" id="quantity" class="form-control w-auto" value="1" min="1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Product Data (Simplified)
+    const productData = {
+      cpu: [
+        { id: 1, name: "AMD Ryzen 9 7950X", description: "16-core, 32-thread processor with 5.7GHz boost clock. AM5 platform.", price: "₱94,677.59", image: "C:\\Users\\Administrator\\Desktop\\E-Commerse\\Images\\Amd.jpg", rating: "★★★★★", reviews: "(94)", badge: "bg-success", category: "CPU" },
+        { id: 2, name: "Intel Core i9-14900K", description: "24-core processor with up to 6.0GHz Turbo Boost. LGA 1700 socket.", price: "₱89,999.99", image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: "★★★★☆", reviews: "(87)", badge: "bg-success", category: "CPU" },
+        { id: 3, name: "AMD Ryzen 7 7800X3D", description: "8-core gaming processor with 3D V-Cache technology for ultimate gaming performance.", price: "₱67,999.99", image: "https://images.unsplash.com/photo-1587202372634-32705b3fe25b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: "★★★★★", reviews: "(102)", badge: "bg-success", category: "CPU" }
+      ],
+      gpu: [
+        { id: 4, name: "NVIDIA RTX 4090", description: "24GB GDDR6X, DLSS 3, Ray Tracing. Ultimate 4K gaming performance.", price: "₱94,677.59", image: "C:\\Users\\Administrator\\Desktop\\E-Commerse\\Images\\Rtx.jpg", rating: "★★★★★", reviews: "(128)", badge: "bg-primary", category: "GPU" },
+        { id: 5, name: "AMD Radeon RX 7900 XTX", description: "24GB GDDR6, RDNA 3 architecture. High-performance 4K gaming.", price: "₱84,999.99", image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: "★★★★☆", reviews: "(76)", badge: "bg-primary", category: "GPU" },
+        { id: 6, name: "NVIDIA RTX 4070 Ti", description: "12GB GDDR6X, DLSS 3. Perfect for 1440p gaming and content creation.", price: "₱62,999.99", image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: "★★★★★", reviews: "(143)", badge: "bg-primary", category: "GPU" }
+      ],
+      motherboard: [
+        { id: 7, name: "ASUS ROG Z790-E", description: "Intel Z790 chipset, DDR5 support, PCIe 5.0, WiFi 6E, advanced cooling.", price: "₱29,546.04", image: "C:\\Users\\Administrator\\Desktop\\E-Commerse\\Images\\Rog.jpg", rating: "★★★★☆", reviews: "(76)", badge: "bg-info", category: "Motherboard" },
+        { id: 8, name: "MSI MAG B650 TOMAHAWK", description: "AMD B650 chipset, DDR5, PCIe 4.0, 2.5G LAN, WiFi 6E for AM5 CPUs.", price: "₱18,999.99", image: "C:\\Users\\Administrator\\Desktop\\E-Commerse\\Images\\Msi.jpg", rating: "★★★★★", reviews: "(92)", badge: "bg-info", category: "Motherboard" },
+        { id: 9, name: "Gigabyte X670 AORUS Elite", description: "AMD X670 chipset, PCIe 5.0 support, DDR5, advanced power delivery.", price: "₱24,999.99", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: "★★★★☆", reviews: "(58)", badge: "bg-info", category: "Motherboard" }
+      ],
+      psu: [
+        { id: 10, name: "Corsair RM1000x (2021)", description: "1000W 80+ Gold certified, fully modular, quiet operation, 10-year warranty.", price: "₱12,499.99", image: "https://images.unsplash.com/photo-1562976540-1502c2145186?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: "★★★★★", reviews: "(203)", badge: "bg-warning text-dark", category: "PSU" }
+      ],
+      ram: [
+        { id: 11, name: "Corsair Dominator Platinum RGB", description: "32GB (2x16GB) DDR5 6000MHz, CL36, RGB lighting, Intel XMP 3.0.", price: "₱14,999.99", image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: "★★★★★", reviews: "(134)", badge: "bg-secondary", category: "RAM" }
+      ],
+      storage: [
+        { id: 12, name: "Samsung 990 Pro 2TB", description: "PCIe 4.0 NVMe M.2 SSD, read speeds up to 7450MB/s, 2TB capacity.", price: "₱15,999.99", image: "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: "★★★★★", reviews: "(287)", badge: "bg-dark", category: "Storage" }
+      ],
+      cooling: [
+        { id: 13, name: "NZXT Kraken Z73", description: "360mm AIO Liquid Cooler with LCD display, RGB lighting, high-performance.", price: "₱11,999.99", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: "★★★★★", reviews: "(89)", badge: "bg-info text-dark", category: "Cooling" }
+      ],
+      cases: [
+        { id: 14, name: "Lian Li O11 Dynamic EVO", description: "Dual chamber PC case with tempered glass, excellent airflow, modular design.", price: "₱9,999.99", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: "★★★★★", reviews: "(156)", badge: "bg-purple", category: "Case" }
+      ]
+    };
+
+    let currentProduct = null;
+
+    // Cart Functions
+    function getCart() {
+        const cart = localStorage.getItem('cartItems');
+        return cart ? JSON.parse(cart) : [];
+    }
+
+    function updateCartCount() {
+        const cart = getCart();
+        const totalItems = cart.reduce((sum, item) => sum + (item.qty || 0), 0);
+        document.getElementById('cart-count').textContent = totalItems;
+    }
+
+    function setCart(cart) {
+        localStorage.setItem('cartItems', JSON.stringify(cart));
+        updateCartCount();
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load cart count on page load
+      updateCartCount();
+      const cards = document.querySelectorAll('.cursor-pointer');
+      cards.forEach(card => {
+        card.removeEventListener('mouseenter', handleMouseEnter);
+        card.removeEventListener('mouseleave', handleMouseLeave);
+      });
+      
+      // Update product counts in category cards
+      updateProductCounts();
+    });
+
+    function updateProductCounts() {
+      Object.keys(productData).forEach(category => {
+        const count = productData[category].length;
+        // Update the count in the category cards
+        document.querySelectorAll(`#main-gallery .card .text-primary`).forEach(el => {
+          if (el.textContent.includes('Product')) {
+            el.textContent = `${count} Product${count !== 1 ? 's' : ''}`;
+          }
+        });
+      });
+    }
+
+    function viewProductDetails(productId) {
+      let product = null;
+      for (const category in productData) {
+        const found = productData[category].find(p => p.id === productId);
+        if (found) {
+          product = found;
+          break;
+        }
+      }
+      if (product) {
+        currentProduct = product;
+        document.getElementById('modalProductImage').src = product.image;
+        document.getElementById('modalProductImage').alt = product.name;
+        document.getElementById('modalProductTitle').textContent = product.name;
+        document.getElementById('modalProductDescription').textContent = product.description;
+        document.getElementById('modalProductPrice').textContent = product.price;
+        document.getElementById('modalProductRating').innerHTML = `${product.rating} <small class="text-muted">${product.reviews}</small>`;
+        document.getElementById('modalProductBadge').className = `badge ${product.badge}`;
+        document.getElementById('modalProductBadge').textContent = product.category;
+        
+        new bootstrap.Modal(document.getElementById('productModal')).show();
+      }
+    }
+
+    function addToCart(productId = null) {
+      if (productId) {
+        for (const category in productData) {
+          const product = productData[category].find(p => p.id === productId);
+          if (product) {
+            currentProduct = product;
+            break;
+          }
+        }
+      }
+      
+      if (currentProduct) {
+        const quantity = document.getElementById('quantity') ? parseInt(document.getElementById('quantity').value) : 1;
+        const name = currentProduct.name;
+      
+        const priceStr = currentProduct.price.replace('₱', '').replace(/,/g, '');
+        const price = parseFloat(priceStr);
+        
+        const image = currentProduct.image;
+        const category = currentProduct.category;
+        
+        let cart = getCart();
+        let found = cart.find(item => item.name === name);
+        
+        if (found) {
+          found.qty += quantity;
+        } else {
+          cart.push({ 
+            name, 
+            price, 
+            image, 
+            category, 
+            qty: quantity 
+          });
+        }
+        
+        setCart(cart);
+        alert(`Added ${quantity}x ${currentProduct.name} to cart!`);
+        
+        const modal = bootstrap.Modal.getInstance(document.getElementById('productModal'));
+        if (modal) modal.hide();
+      }
+    }
+  </script>
+</body>
+</html>

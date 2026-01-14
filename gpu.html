@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Cards - PC Parts Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">PC Parts Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center w-100">
+                    <ul class="navbar-nav d-flex flex-column flex-lg-row">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="product.html">All Categories</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="cpu.html"><i class="bi bi-cpu me-2 text-success"></i>Processors (CPU)</a></li>
+                                <li><a class="dropdown-item" href="gpu.html"><i class="bi bi-gpu-card me-2 text-primary"></i>Graphics Cards (GPU)</a></li>
+                                <li><a class="dropdown-item" href="motherboard.html"><i class="bi bi-motherboard me-2 text-info"></i>Motherboards</a></li>
+                                <li><a class="dropdown-item" href="psu.html"><i class="bi bi-lightning-charge me-2 text-warning"></i>Power Supplies</a></li>
+                                <li><a class="dropdown-item" href="ram.html"><i class="bi bi-memory me-2 text-secondary"></i>RAM Memory</a></li>
+                                <li><a class="dropdown-item" href="storage.html"><i class="bi bi-hdd me-2 text-dark"></i>Storage</a></li>
+                                <li><a class="dropdown-item" href="cooling.html"><i class="bi bi-fan me-2 text-info"></i>Cooling</a></li>
+                                <li><a class="dropdown-item" href="cases.html"><i class="bi bi-pc-display me-2 text-purple"></i>PC Cases</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="d-flex flex-column flex-lg-row mt-3 mt-lg-0">
+                        <div class="d-flex">
+                            <a href="cart.html" class="btn btn-outline-light me-2">
+                                <i class="bi bi-cart-fill me-2"></i>Cart (<span id="cart-count">0</span>)
+                            </a>
+                            <a href="login.html" class="btn btn-primary me-2">Login</a>
+                            <a href="register.html" class="btn btn-outline-primary">Register</a>
+                        </div>
+                        <form class="d-flex mt-3 mt-lg-0 ms-lg-3">
+                            <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <main>
+        <div class="d-flex flex-column justify-content-center align-items-center py-5" 
+            style="background-image: url('C:\\Users\\Administrator\\Desktop\\E-Commerse\\Images\\Pc.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
+            <div style="background-color: rgba(0, 0, 0, 0.6); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="fw-bold display-5 text-center text-white mb-3">Graphics Cards (GPU)</h1>
+                    <p class="lead text-center text-white">NVIDIA RTX & AMD Radeon for ultimate gaming performance</p>
+                    <a href="product.html" class="btn btn-outline-light mt-3">
+                        <i class="bi bi-arrow-left me-2"></i>Back to All Categories
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- NVIDIA RTX 4090 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 product-card border-primary border-2">
+                        <img src="C:\Users\Administrator\Desktop\E-Commerse\Images\Rtx.jpg" alt="NVIDIA RTX 4090" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-primary mb-2 align-self-start">GPU</span>
+                            <h5 class="card-title fw-bold">NVIDIA RTX 4090</h5>
+                            <p class="card-text text-muted flex-grow-1">24GB GDDR6X, DLSS 3, Ray Tracing. Ultimate 4K gaming performance.</p>
+                            
+                            <div class="specs mb-3">
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="bi bi-memory text-primary me-2"></i>
+                                    <small>24GB VRAM</small>
+                                </div>
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="bi bi-speedometer2 text-primary me-2"></i>
+                                    <small>2.52 GHz Boost</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-lightning-charge text-primary me-2"></i>
+                                    <small>450W TDP</small>
+                                </div>
+                            </div>
+                            
+                            <div class="fs-4 fw-bold text-dark mt-auto mb-2">₱94,677.59</div>
+                            <div class="text-warning mb-2">
+                                ★★★★★ <small class="text-muted">(128 reviews)</small>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-btn"
+                                    data-name="NVIDIA RTX 4090"
+                                    data-price="94677.59"
+                                    data-image="C:\Users\Administrator\Desktop\E-Commerse\Images\Rtx.jpg"
+                                    data-category="GPU">
+                                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AMD Radeon RX 7900 XTX -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 product-card border-primary border-2">
+                        <img src="C:\Users\Administrator\Desktop\E-Commerse\Images\RX 7900.jpg" alt="AMD Radeon RX 7900 XTX" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-primary mb-2 align-self-start">GPU</span>
+                            <h5 class="card-title fw-bold">AMD Radeon RX 7900 XTX</h5>
+                            <p class="card-text text-muted flex-grow-1">24GB GDDR6, RDNA 3 architecture. High-performance 4K gaming.</p>
+                            
+                            <div class="specs mb-3">
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="bi bi-memory text-primary me-2"></i>
+                                    <small>24GB VRAM</small>
+                                </div>
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="bi bi-speedometer2 text-primary me-2"></i>
+                                    <small>2.5 GHz Boost</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-lightning-charge text-primary me-2"></i>
+                                    <small>355W TDP</small>
+                                </div>
+                            </div>
+                            
+                            <div class="fs-4 fw-bold text-dark mt-auto mb-2">₱84,999.99</div>
+                            <div class="text-warning mb-2">
+                                ★★★★☆ <small class="text-muted">(76 reviews)</small>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-btn"
+                                    data-name="AMD Radeon RX 7900 XTX"
+                                    data-price="84999.99"
+                                    data-image="C:\Users\Administrator\Desktop\E-Commerse\Images\RX 7900.jpg"
+                                    data-category="GPU">
+                                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NVIDIA RTX 4070 Ti -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 product-card border-primary border-2">
+                        <img src="C:\Users\Administrator\Desktop\E-Commerse\Images\RTX 4070.webp" alt="NVIDIA RTX 4070 Ti" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-primary mb-2 align-self-start">GPU</span>
+                            <h5 class="card-title fw-bold">NVIDIA RTX 4070 Ti</h5>
+                            <p class="card-text text-muted flex-grow-1">12GB GDDR6X, DLSS 3. Perfect for 1440p gaming and content creation.</p>
+                            
+                            <div class="specs mb-3">
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="bi bi-memory text-primary me-2"></i>
+                                    <small>12GB VRAM</small>
+                                </div>
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="bi bi-speedometer2 text-primary me-2"></i>
+                                    <small>2.61 GHz Boost</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-lightning-charge text-primary me-2"></i>
+                                    <small>285W TDP</small>
+                                </div>
+                            </div>
+                            
+                            <div class="fs-4 fw-bold text-dark mt-auto mb-2">₱62,999.99</div>
+                            <div class="text-warning mb-2">
+                                ★★★★★ <small class="text-muted">(143 reviews)</small>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-btn"
+                                    data-name="NVIDIA RTX 4070 Ti"
+                                    data-price="62999.99"
+                                    data-image="C:\Users\Administrator\Desktop\E-Commerse\Images\RTX 4070.webp"
+                                    data-category="GPU">
+                                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center">
+                <p class="mb-0">© 2024 PC Parts Hub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cart Functions
+        function getCart() {
+            return JSON.parse(localStorage.getItem('cartItems') || '[]');
+        }
+
+        function setCart(cart) {
+            localStorage.setItem('cartItems', JSON.stringify(cart));
+            document.getElementById('cart-count').textContent = cart.reduce((sum, item) => sum + item.qty, 0);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load cart count
+            setCart(getCart());
+            
+            // Add event listeners to Add to Cart buttons
+            document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    addToCartDirect(this);
+                });
+            });
+        });
+
+        function addToCartDirect(buttonElement) {
+            const name = buttonElement.getAttribute('data-name');
+            const price = parseFloat(buttonElement.getAttribute('data-price'));
+            const image = buttonElement.getAttribute('data-image');
+            const category = buttonElement.getAttribute('data-category');
+            
+            let cart = getCart();
+            let found = cart.find(item => item.name === name);
+            
+            if (found) {
+                found.qty += 1;
+            } else {
+                cart.push({ name, price, image, category, qty: 1 });
+            }
+            
+            setCart(cart);
+            
+            // Visual feedback
+            const originalText = buttonElement.innerHTML;
+            buttonElement.innerHTML = '<i class="bi bi-check-circle me-2"></i>Added!';
+            buttonElement.disabled = true;
+            buttonElement.classList.remove('btn-primary');
+            buttonElement.classList.add('btn-outline-primary');
+            
+            setTimeout(() => {
+                buttonElement.innerHTML = originalText;
+                buttonElement.disabled = false;
+                buttonElement.classList.remove('btn-outline-primary');
+                buttonElement.classList.add('btn-primary');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
