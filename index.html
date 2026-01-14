@@ -10,8 +10,20 @@
 
 <body class="bg-light">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 sticky-top" style="z-index:1030;">
+<!-- Header Section -->
+<div class="d-flex flex-column justify-content-center align-items-center py-5"
+     style="background-image: url('Images/Pc.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
+  <div style="background-color: rgba(0,0,0,0.6); position:absolute; top:0; left:0; width:100%; height:100%;"></div>
+  <div class="container" style="position:relative; z-index:1;">
+    <div class="d-flex flex-column align-items-center text-center text-white">
+      <h1 class="fw-bold display-5">Welcome to PC Parts Hub</h1>
+      <p class="lead">Building excellence, one component at a time</p>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation (sticky below header) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 sticky-top" style="z-index: 1020;">
   <div class="container-fluid">
     <a class="navbar-brand fw-bold" href="index.html">PC Parts Hub</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -42,18 +54,6 @@
     </div>
   </div>
 </nav>
-
-<!-- Header Section -->
-<div class="d-flex flex-column justify-content-center align-items-center py-5"
-     style="background-image: url('Images/Pc.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
-  <div style="background-color: rgba(0,0,0,0.6); position:absolute; top:0; left:0; width:100%; height:100%;"></div>
-  <div class="container" style="position:relative; z-index:1;">
-    <div class="d-flex flex-column align-items-center text-center text-white">
-      <h1 class="fw-bold display-5">Welcome to PC Parts Hub</h1>
-      <p class="lead">Building excellence, one component at a time</p>
-    </div>
-  </div>
-</div>
 
 <!-- Main Content -->
 <div class="container py-5">
@@ -130,7 +130,7 @@
           <p class="text-muted mb-3 flex-grow-1">24GB GDDR6X, DLSS 3, Ray Tracing. Ultimate 4K gaming performance.</p>
           <div class="d-flex justify-content-between align-items-center mb-3">
             <span class="fs-5 fw-bold text-dark">₱94677.59</span>
-            <div class="d-flex align-items-center"><span class="text-warning me-1">★★★★★</span><small class="text-muted">(128)</small></div>
+            <div class="d-flex align-items-center"><span class="text-warning me-1"></div>
           </div>
           <div class="d-grid gap-2">
             <button class="btn btn-primary add-to-cart-btn" data-name="NVIDIA RTX 4090" data-price="94677.59" data-image="Images/Rtx.jpg" data-category="GPU">Add to Cart</button>
@@ -146,7 +146,7 @@
           <p class="text-muted mb-3 flex-grow-1">16-core, 32-thread processor with 5.7GHz boost clock. AM5 platform.</p>
           <div class="d-flex justify-content-between align-items-center mb-3">
             <span class="fs-5 fw-bold text-dark">₱94677.59</span>
-            <div class="d-flex align-items-center"><span class="text-warning me-1">★★★★★</span><small class="text-muted">(94)</small></div>
+            <div class="d-flex align-items-center"><span class="text-warning me-1"></div>
           </div>
           <div class="d-grid gap-2">
             <button class="btn btn-primary add-to-cart-btn" data-name="AMD Ryzen 9 7950X" data-price="94677.59" data-image="Images/Amd.jpg" data-category="CPU">Add to Cart</button>
@@ -162,7 +162,7 @@
           <p class="text-muted mb-3 flex-grow-1">Intel Z790 chipset, DDR5 support, PCIe 5.0, WiFi 6E, advanced cooling.</p>
           <div class="d-flex justify-content-between align-items-center mb-3">
             <span class="fs-5 fw-bold text-dark">₱29546.04</span>
-            <div class="d-flex align-items-center"><span class="text-warning me-1">★★★★☆</span><small class="text-muted">(76)</small></div>
+            <div class="d-flex align-items-center"><span class="text-warning me-1"></div>
           </div>
           <div class="d-grid gap-2">
             <button class="btn btn-primary add-to-cart-btn" data-name="ASUS ROG Z790-E" data-price="29546.04" data-image="Images/Rog.jpg" data-category="Motherboard">Add to Cart</button>
@@ -189,7 +189,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-  // Simple Cart Script
+  // Cart Functions
   function getCart() { return JSON.parse(localStorage.getItem('cartItems') || '[]'); }
   function setCart(cart) { 
     localStorage.setItem('cartItems', JSON.stringify(cart)); 
@@ -207,6 +207,7 @@
         let cart = getCart();
         let found = cart.find(item=>item.name===name);
         if(found) found.qty+=1; else cart.push({name, price, image, category, qty:1});
+
         setCart(cart);
         btn.innerHTML = '<i class="bi bi-check-circle me-2"></i>Added!';
         btn.disabled = true;
